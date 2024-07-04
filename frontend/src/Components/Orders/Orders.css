@@ -1,0 +1,46 @@
+.orders {
+    margin: 60px 80px;
+}
+.orders h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+.orders p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #454545;
+}
+.orders-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0px;
+}
+.orders-product img {
+    height: 250px;
+    width: 200px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+}
+.order-remove-button button {
+    width: 150px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 20px; /* Adjust border radius as needed */
+    background: #5a52cc;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.order-remove-button button:hover {
+    background: #3b11c4; /* Darken the background color on hover */
+}

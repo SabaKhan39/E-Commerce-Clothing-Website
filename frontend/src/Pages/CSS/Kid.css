@@ -1,0 +1,134 @@
+.kids-page {
+    padding: 20px;
+  }
+  
+  .kids-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .toggle-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .toggle-button.active {
+    background-color: #4141ff;
+    color: white;
+  }
+  
+  .kids-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .category-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .category-circle:hover img {
+    transform: scale(1.05);
+  }
+  
+  .category-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #171717;
+    text-align: center;
+  }
+  
+  .kids-indexSort {
+    margin-top: 80px;
+    align-items: center;
+  }
+  
+  .kids-indexSort h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .kids-indexSort hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    margin: 30px auto;
+    margin-bottom: 60px;
+  }
+  .kids-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+
+  @media (max-width: 768px) {
+    .category-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category-circle img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .kids-indexSort h1 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+
+    .kids-products {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .kids-product-item {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+  

@@ -1,0 +1,82 @@
+.clothing-page {
+  padding: 0px;
+}
+
+.clothing-banner {
+  width: 100%;
+  height: auto;
+}
+.clothing-indexSort {
+  margin-top: 80px;
+  align-items: center;
+}
+.clothing-indexSort h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.clothing-indexSort hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+  margin: 30px auto;
+  margin-bottom: 60px;
+}
+
+.clothing-products {
+  margin-top: 50px;
+  display: flex;
+  padding-left: 180px;
+  gap: 20px;
+}
+
+.shopcategory-product-item {
+  flex: 1 1 calc(25% - 20px);
+}
+
+.clothing-text {
+  color: #171717;
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.clothing-text hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+  margin: 30px auto;
+  margin-bottom: 60px;
+}
+
+.shopcategory-collections {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.collection-container {
+  text-align: center;
+  cursor: pointer;
+}
+
+.collection-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.collection-container p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 200;
+  margin-bottom: 80px;
+}
+
+.collection-container:hover img {
+  transform: scale(1.05);
+}

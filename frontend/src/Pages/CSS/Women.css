@@ -1,0 +1,111 @@
+.womens-page {
+    padding: 20px;
+}
+
+.womens-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.womens-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    text-align: center;
+}
+
+.category-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-circle img {
+    width: 120px; /* Adjust image size as needed */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.category-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #171717;
+}
+
+.category-circle:hover img {
+    transform: scale(1.05);
+    background-color: #171717;
+  }
+
+  .womens-indexSort {
+    margin-top: 80px;
+    align-items: center;
+  }
+  .womens-indexSort h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .womens-indexSort hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    margin: 30px auto;
+    margin-bottom: 60px;
+  }
+  
+  .womens-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+  
+  .womens-product-item {
+    flex: 1 1 calc(25% - 20px);
+  }
+  
+
+  @media (max-width: 768px) {
+    .category-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category-circle img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .womens-indexSort h1 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+
+    .womens-products {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .womens-product-item {
+        flex: 1 1 calc(100% - 20px);
+    }
+}

@@ -1,0 +1,42 @@
+.cosmetics-page,
+.electronics-page {
+  padding: 0px;
+}
+
+.shopcategory-banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+.shopcategory-indexSort {
+  
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.shopcategory-indexSort h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.shopcategory-indexSort hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+  margin: 30px auto;
+  margin-bottom: 60px;
+}
+
+.shopcategory-products {
+    margin-top: 50px;
+    display: flex;
+    padding-left: 180px;
+  }
+  
+  .shopcategory-product-item {
+    flex: 1 1 calc(25% - 20px);
+  }
+  
